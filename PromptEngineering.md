@@ -104,27 +104,104 @@ Simple prompt efficiency:
 
 ### Persona
 
+Who do you want the AI to be?
+
+- You are a <persona here> with over 20 years of experience...
+
+A specialty/role/occupation is preferred over a specific Famous identity, i.e. Bill Gates, but very famous ones may work well. 
+
+- In essence, providing contextual information for the AI to return an outut using reference to the given persona, experience professional of choice, will help return more accurate/quality outputs
+
+Example:
+- You are trained Data Scientist with over 15 years of experience working multiple positions of the Data field. Generate a guideline that....
 
 
 
 ### Context
 
+1. What is the user's *background*?
+2. What does *success* look like?
+3. What *environment* are they in?
 
-
+The key is giving just enough information to constrain the endless possibilies (thus providing more efficient prompts/responses)
 
 ### Task
 
+- Start Task sentence with an action verb
+    - e.g. Generate, Summarize, Categorize
+- Articulate what your end goal
 
+- Can be a simple task or multi-step task
 
 
 ### Exemplar
 
+Including examples in the prompt DRASTICALLY improves the qually of the output (more accurate results)
 
+- Providing an example of what you expect, or a guideline such as a framework, will provide a more accurate output form the prompt
+
+- A full textual example is not necessary, but a framework, in whcih you define the structure or how to format the results, will suffice as well and save on prompt time/tokens
+
+
+Exemplars are not necessary for every prompt, but including a relevant example greatly improves the quality of your put.
+
+- Example:
+    - STAR framework:
+        - Situation, Task, Action, Results
 
 
 ### format
 
+Visualize what you would like the end result/output to look like
 
+
+Example: 
+... Output a table format with column headers: Feedback, Team, and Priority.
+
+Other formats:
+- emails
+- bullet points
+- code blocks
+- paragraphs
+- markdown
+
+Example:
+- given this sample article: ... Please provide topic summaries, each containing 1-2 sentences detailing the topic point. Place each topic summary title as a <h2>
+
+
+Example:
+- "...Bold all changes provided"
+
+This will allow you to quickly identify if there have been any changes, and where without having to cross reference the original document. HUGE
 
 
 ### Tone
+
+Tell the AI the feeling you're looking for. Explain the feeling you want to convey the information as, and it will help describe/properly find mood outputs to set the tone of response
+
+
+Tip:
+- "Can you please me a list of 5 tone keywords I can include in a prompt for ChatGPT?"
+    - This may result in finding the proper keywords to then use in a higher quality prompt for a higher qualityaccurate output
+
+
+Examples:
+- Casual tone 
+- formal tone
+- "give me a witty output"
+- show enthusiasm
+- sound pessimistic
+
+
+
+
+Example prompt using the entire formula:
+
+
+You are a senior manager at Microsoft and you have just released the new tehcnical debut demonstration of windows 12, which is expected to allow users a free upgrade by the year 2026 and increase performance for all users.
+
+Write an email to existing customer-base about how the upgrade will allow for a free upgrade and not impact current programs/systems that users are using in any way, except to provide faster tehcnical performance and better integrated UI experiences.
+
+This email should include a tl;dr (too long, didn't read) section, project background (why this product came into existence), business results section(quantifiable business metrics), and end with a section thanking users for the continuous support of the Microsoft brand products/services.
+
+Use clear and concise language and write in a comforting/confident yet friendly tone.
